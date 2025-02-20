@@ -3,6 +3,14 @@
 
 #include <QMainWindow>
 
+#include <QtCore>
+#include <QtGui>
+#include <QtCharts>
+#include <QtWidgets>
+#include <QGraphicsScene>
+#include <QString>
+#include <QDebug>
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -16,8 +24,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
 private:
     Ui::MainWindow *ui;
+    QGraphicsScene *Scene;
 };
 #endif // MAINWINDOW_H

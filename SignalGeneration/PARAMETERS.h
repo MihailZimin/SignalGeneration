@@ -1,0 +1,8 @@
+#ifndef PARAMETERS_H
+#define PARAMETERS_H
+
+int WIDTH = 1400;
+int HEIGHT = 700;
+int SIGNAL_INFO_WIDTH = 330;
+
+#endif // PARAMETERS_H
