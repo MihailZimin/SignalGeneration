@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "PARAMETERS.h"
 
 
 #include <QApplication>
@@ -12,7 +11,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    w.resize(WIDTH, HEIGHT);
+    w.resize(1780, 1000);
     w.show();
 
     return a.exec();

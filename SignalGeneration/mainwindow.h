@@ -1,15 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+
 #include <QMainWindow>
 
-#include <QtCore>
-#include <QtGui>
-#include <QtCharts>
-#include <QtWidgets>
-#include <QGraphicsScene>
-#include <QString>
-#include <QDebug>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -26,6 +20,5 @@ public:
     ~MainWindow();
 private:
     Ui::MainWindow *ui;
-    QGraphicsScene *Scene;
 };
 #endif // MAINWINDOW_H
