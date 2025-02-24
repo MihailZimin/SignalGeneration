@@ -95,7 +95,7 @@ GraphicsField::GraphicsField(QMainWindow* parent) {
     view->setRenderHint(QPainter::Antialiasing);
     view->setScene(scene);
 
-    QStackedWidget *stacked_widget = new QStackedWidget();
+    stacked_widget = new QStackedWidget();
 
     stacked_widget->resize(view->width()+280, view->height()+260);
 
