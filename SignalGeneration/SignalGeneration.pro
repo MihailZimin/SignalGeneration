@@ -10,11 +10,13 @@ CONFIG += c++17
 
 SOURCES += \
     graphicsfield.cpp \
+    lamp.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     graphicsfield.h \
+    lamp.h \
     mainwindow.h \
     params.h
 
@@ -25,3 +27,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc

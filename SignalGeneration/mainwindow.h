@@ -20,5 +20,6 @@ public:
     ~MainWindow();
 private:
     Ui::MainWindow *ui;
+    void toggleLight();
 };
 #endif // MAINWINDOW_H

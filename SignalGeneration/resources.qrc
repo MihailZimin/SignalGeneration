@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>images/light_off.png</file>
+        <file>images/light_on.png</file>
+        <file>images/green.jpg</file>
+        <file>images/hed.png</file>
+        <file>images/green1.jpg</file>
+        <file>images/green2.png</file>
+        <file>images/green3.webp</file>
+    </qresource>
+</RCC>
