@@ -475,7 +475,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Цель доступна:</string>
+     <string>Цель в зоне:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
