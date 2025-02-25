@@ -8,6 +8,10 @@
 #include <QGraphicsScene>
 #include <QString>
 #include <QDebug>
+#include <QPropertyAnimation>
+#include <QGraphicsOpacityEffect>
+#include <QGraphicsScene>
+#include <QFont>
 
 class GraphicsField
 {
@@ -15,6 +19,8 @@ public:
     GraphicsField(QMainWindow* parent);
 
     QGraphicsScene* getScene(){ return scene; }
+
+    QStackedWidget *stacked_widget;
 
 private:
     QGraphicsScene* scene;

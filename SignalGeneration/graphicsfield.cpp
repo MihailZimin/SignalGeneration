@@ -20,6 +20,12 @@ GraphicsField::GraphicsField(QMainWindow* parent) {
 
     imaginary_part->append(0, 2);
     imaginary_part->append(1, 1);
+    imaginary_part->append(5, 3);
+    imaginary_part->append(6, 25);
+    imaginary_part->append(8, 12);
+    imaginary_part->append(10, 4);
+    imaginary_part->append(11, 7);
+    imaginary_part->append(13, 6);
 
 
     QChart *real_chart = new QChart();
@@ -65,10 +71,18 @@ GraphicsField::GraphicsField(QMainWindow* parent) {
     absolute_chart->setVisible(true);
 
 
-    real_chart->setTitle("Действительная часть");
-    imaginary_chart->setTitle("Мнимая часть");
-    phase_chart->setTitle("Фаза");
-    absolute_chart->setTitle("Модуль");
+    QFont font;
+    font.setPointSize(14);
+    font.setBold(true);
+
+    real_chart->setTitle("Действительная часть сигнала");
+    real_chart->setTitleFont(font);
+    imaginary_chart->setTitle("Мнимая часть сигнала");
+    imaginary_chart->setTitleFont(font);
+    phase_chart->setTitle("Фаза сигнала");
+    phase_chart->setTitleFont(font);
+    absolute_chart->setTitle("Модуль сигнала");
+    absolute_chart->setTitleFont(font);
 
 
     QChartView *real_chartview = new QChartView(real_chart);
@@ -95,7 +109,7 @@ GraphicsField::GraphicsField(QMainWindow* parent) {
     view->setRenderHint(QPainter::Antialiasing);
     view->setScene(scene);
 
-    QStackedWidget *stacked_widget = new QStackedWidget();
+    stacked_widget = new QStackedWidget();
 
     stacked_widget->resize(view->width()+280, view->height()+260);
 
