@@ -284,9 +284,9 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2">
+       <widget class="QLineEdit" name="distance_resolution_lineEdit">
         <property name="text">
-         <string>4.997</string>
+         <string>4.9965</string>
         </property>
        </widget>
       </item>
@@ -337,7 +337,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_16">
+       <widget class="QLineEdit" name="frequency_lineEdit">
         <property name="text">
          <string>30</string>
         </property>
@@ -641,7 +641,7 @@
      <x>0</x>
      <y>0</y>
      <width>1537</width>
-     <height>25</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
