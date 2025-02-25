@@ -55,7 +55,6 @@ void MainWindow::on_radioButton_FKM_clicked(bool checked)
     }
 }
 
-
 void MainWindow::on_radioButton_AIM_clicked(bool checked)
 {
     if (checked) {
