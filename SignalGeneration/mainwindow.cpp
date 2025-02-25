@@ -8,8 +8,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    graphics_field = GraphicsField(this);
-    ui->graphicsView->setScene(graphics_field.getScene());
+    graphics_field = new GraphicsField(this);
+    ui->graphicsView->setScene(graphics_field->getScene());
 
     ui->label_8->setPixmap(QPixmap(":/new/images/hed.png"));
 
@@ -111,7 +111,31 @@ void MainWindow::toggleLight()
 void MainWindow::on_real_part_of_signal_clicked(bool checked)
 {
     if (checked) {
-        graphics_field.stacked_widget->setCurrentIndex(0);
+        graphics_field->stacked_widget->setCurrentIndex(0);
+    }
+}
+
+
+void MainWindow::on_imag_part_of_signal_clicked(bool checked)
+{
+    if (checked) {
+        graphics_field->stacked_widget->setCurrentIndex(1);
+    }
+}
+
+
+void MainWindow::on_phase_clicked(bool checked)
+{
+    if (checked) {
+        graphics_field->stacked_widget->setCurrentIndex(2);
+    }
+}
+
+
+void MainWindow::on_absolute_clicked(bool checked)
+{
+    if (checked) {
+        graphics_field->stacked_widget->setCurrentIndex(3);
     }
 }
 

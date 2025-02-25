@@ -11,6 +11,7 @@
 #include <QPropertyAnimation>
 #include <QGraphicsOpacityEffect>
 #include <QGraphicsScene>
+#include <QFont>
 
 class GraphicsField
 {
