@@ -25,6 +25,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->deviation_groupBox->hide();
     ui->groupBox_2->hide();
+    ui->distance_resolution_lineEdit->setReadOnly(true);
 }
 
 MainWindow::~MainWindow()
@@ -135,6 +136,20 @@ void MainWindow::on_absolute_clicked(bool checked)
 {
     if (checked) {
         graphics_field->stacked_widget->setCurrentIndex(3);
+    }
+}
+
+
+void MainWindow::on_frequency_lineEdit_textChanged(const QString &arg1)
+{
+    if (!arg1.isEmpty()) {
+        double disk = arg1.toDouble();
+        double distance_res = 299792458 / (disk * 1e6 * 2);
+        QString str = QString::number(distance_res, 'f', 4);
+        ui->distance_resolution_lineEdit->setText(str);
+    }
+    else {
+        ui->distance_resolution_lineEdit->clear();
     }
 }
 

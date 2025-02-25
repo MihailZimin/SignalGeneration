@@ -31,6 +31,8 @@ private slots:
 
     void on_absolute_clicked(bool checked);
 
+    void on_frequency_lineEdit_textChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     void toggleLight();
